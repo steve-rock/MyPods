@@ -2,10 +2,10 @@ s.dependency::Spec.new do |s|
   s.name          = 'SwiftyAds'
   s.version       = '1.0'
   s.summary       = 'MS SDK'
-  s.homepage      = 'http://SwiftyAds.com'
+  s.homepage      = 'https://github.com/steve-rock/MyPods'
   s.license       = { :type => 'MIT' }
   s.author        = { 'SwiftyAds' => 'SwiftyAds@gmail.com' }
-  s.source        = { :http => 'https://drive.google.com/u/0/uc?id=1B8cRm1S0tQSshomA3Dfc8J5yY0JePAT4&export=download&confirm=t' }
+  s.source        = { :http => 'https://raw.githubusercontent.com/steve-rock/MyPods/main/SwiftyAds-v1.0.zip' }
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
 
