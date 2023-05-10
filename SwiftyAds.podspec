@@ -3,8 +3,8 @@ s.dependency::Spec.new do |s|
   s.version       = '1.0'
   s.summary       = 'MS SDK'
   s.homepage      = 'https://github.com/steve-rock/MyPods'
-  s.license       = { :type => 'MIT' }
-  s.author        = { 'SwiftyAds' => 'SwiftyAds@gmail.com' }
+  s.license       = { :type => 'MIT', :file => 'LICENSE' }
+  s.author        = { 'Steve Rock' => 'steve-rock@gmail.com' }
   s.source        = { :http => 'https://raw.githubusercontent.com/steve-rock/MyPods/main/SwiftyAds-v1.0.zip' }
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
