@@ -2820,6 +2820,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10967,6 +10977,48 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 381,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 583,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 766,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 802,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 851,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/Feat\/FeatRecommendCell.swift",
       "kind": "BooleanLiteral",
       "offset": 310,
@@ -11228,14 +11280,14 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Controller\/BaseController.swift",
       "kind": "IntegerLiteral",
-      "offset": 859,
+      "offset": 908,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Controller\/BaseController.swift",
       "kind": "BooleanLiteral",
-      "offset": 890,
+      "offset": 939,
       "length": 5,
       "value": "false"
     },
