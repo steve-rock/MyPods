@@ -1,0 +1,11 @@
+framework module SwiftyAds {
+  umbrella header "SwiftyAds.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyAds.Swift {
+  header "SwiftyAds-Swift.h"
+  requires objc
+}

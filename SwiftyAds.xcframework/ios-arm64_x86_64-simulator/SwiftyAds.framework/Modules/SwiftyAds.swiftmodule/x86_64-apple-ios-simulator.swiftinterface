@@ -1,0 +1,222 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SwiftyAds
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import AVKit
+import AdSupport
+import AppLovinSDK
+import AppTrackingTransparency
+import CRRefresh
+import CryptoSwift
+import Foundation
+import GoogleMobileAds
+import JavaScriptCore
+import MarqueeLabel
+import MediaPlayer
+import MessageUI
+import RealmSwift
+import SDWebImage
+import Swift
+import SwiftMessages
+import SwiftSoup
+@_exported import SwiftyAds
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ApplovinOpenHandle : ObjectiveC.NSObject {
+  public static let shared: SwiftyAds.ApplovinOpenHandle
+  public func preloadAd(completion: ((_ success: Swift.Bool) -> Swift.Void)?)
+  @discardableResult
+  public func tryToPresent() -> Swift.Bool
+  public func awake()
+  @objc deinit
+}
+extension SwiftyAds.ApplovinOpenHandle : AppLovinSDK.MAAdDelegate {
+  @objc dynamic public func didLoad(_ ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
+  @objc dynamic public func didDisplay(_ ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didClick(_ ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didHide(_ ad: AppLovinSDK.MAAd)
+  @objc dynamic public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
+}
+public enum AltEnum : Swift.String {
+  case setting
+  case getLi
+  case getVi
+  case getPl
+  case suggestTerm
+  case upNext
+  case search
+  case searchAll
+  case searchSong
+  case searchVideo
+  case searchArtist
+  case searchPlaylist
+  case searchAlbum
+  case searchGenre
+  case searchArtistDetail
+  case playlistOrAlbumDetail
+  case genreDetail
+  case humHottest
+  case humNewst
+  case humArtits
+  case humRecommend
+  case humTredn
+  case humNewstDetail
+  case humArtitsDetail
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SearchType : Swift.Int {
+  case video
+  case playlist
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AppLovinNativeAdView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var nativeAdView: AppLovinSDK.MANativeAdView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DBService : ObjectiveC.NSObject {
+  public static let shared: SwiftyAds.DBService
+  public func setup()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdmobOpenHandle : ObjectiveC.NSObject {
+  public static let shared: SwiftyAds.AdmobOpenHandle
+  public func preloadAd(completion: ((_ success: Swift.Bool) -> Swift.Void)?)
+  public func tryToPresent() -> Swift.Bool
+  public func awake()
+  @objc deinit
+}
+extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelegate {
+  @objc dynamic public func adWillPresentFullScreenContent(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func adDidDismissFullScreenContent(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func ad(_ ad: GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Swift.Error)
+  @objc dynamic public func adDidRecordImpression(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func adDidRecordClick(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class func size(_ width: CoreFoundation.CGFloat = 0) -> CoreFoundation.CGSize
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AppLovinNativeAdCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public class func size(_ width: CoreFoundation.CGFloat = 0) -> CoreFoundation.CGSize
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ApplovinHandle : ObjectiveC.NSObject {
+  public static let shared: SwiftyAds.ApplovinHandle
+  public func awake(completion: @escaping () -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdTableCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @objc deinit
+}
+public typealias MuDictionary = [Swift.String : Any?]
+public typealias MuAnyHashable = [Swift.AnyHashable : Any]
+public enum AdsName : Swift.String {
+  case admob, applovin
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AdsUnit : Swift.String {
+  case banner, native, interstitial, open, reward
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AppLovinNativeAdTableCell : UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class AdmobHandle : ObjectiveC.NSObject {
+  public static let shared: SwiftyAds.AdmobHandle
+  public func awake(completion: @escaping () -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdView : GoogleMobileAds.GADNativeAdView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var nativeAd: GoogleMobileAds.GADNativeAd? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension SwiftyAds.AltEnum : Swift.Equatable {}
+extension SwiftyAds.AltEnum : Swift.Hashable {}
+extension SwiftyAds.AltEnum : Swift.RawRepresentable {}
+extension SwiftyAds.SearchType : Swift.Equatable {}
+extension SwiftyAds.SearchType : Swift.Hashable {}
+extension SwiftyAds.SearchType : Swift.RawRepresentable {}
+extension SwiftyAds.AdsName : Swift.Equatable {}
+extension SwiftyAds.AdsName : Swift.Hashable {}
+extension SwiftyAds.AdsName : Swift.RawRepresentable {}
+extension SwiftyAds.AdsUnit : Swift.Equatable {}
+extension SwiftyAds.AdsUnit : Swift.Hashable {}
+extension SwiftyAds.AdsUnit : Swift.RawRepresentable {}
