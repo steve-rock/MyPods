@@ -1,5 +1,5 @@
 s.dependency::Spec.new do |s|
-  s.name          = 'SwiftyAds'
+  s.name          = 'SwiftyyAds'
   s.version       = '1.0'
   s.summary       = 'MS SDK'
   s.homepage      = 'https://github.com/steve-rock/MyPods'
