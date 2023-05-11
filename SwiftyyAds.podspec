@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'AppLovinSDK'
 
-  s.preserve_paths = 'SwiftyAds.xcframework'
-  s.vendored_frameworks = 'SwiftyAds.xcframework'
+  s.preserve_paths = 'MyPods-1.0/SwiftyAds.xcframework'
+  s.vendored_frameworks = 'MyPods-1.0/SwiftyAds.xcframework'
 
 end
