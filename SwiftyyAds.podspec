@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://github.com/steve-rock/MyPods'
   s.license       = { :type => 'MIT', :file => 'LICENSE' }
   s.author        = { 'Steve Rock' => 'steve-rock@gmail.com' }
-  s.source        = { :http => 'https://github.com/steve-rock/MyPods/archive/1.0.zip' }
-  # s.source       = { :git => 'https://github.com/steve-rock/MyPods.git', :tag => '#{s.version}' }
+  # s.source        = { :http => 'https://github.com/steve-rock/MyPods/archive/1.0.zip' }
+  s.source        = { :git => 'https://github.com/steve-rock/MyPods.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
 
@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'AppLovinSDK'
 
-  s.preserve_paths = 'MyPods-1.0/SwiftyAds.xcframework'
-  s.vendored_frameworks = 'MyPods-1.0/SwiftyAds.xcframework'
+  s.vendored_frameworks = 'SwiftyAds.xcframework'
 
 end
