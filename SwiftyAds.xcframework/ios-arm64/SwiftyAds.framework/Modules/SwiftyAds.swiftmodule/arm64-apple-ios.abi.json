@@ -11321,13 +11321,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/DBService.swift",
-      "kind": "IntegerLiteral",
-      "offset": 640,
-      "length": 1,
-      "value": "2"
-    },
-    {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/NewestDetail\/NewestDetailHeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 593,
