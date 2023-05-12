@@ -257,6 +257,20 @@ using UInt = size_t;
 #if defined(__OBJC__)
 
 
+SWIFT_CLASS("_TtC9SwiftyAds11AdmobBanner")
+@interface AdmobBanner : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class GADBannerView;
+
+@interface AdmobBanner (SWIFT_EXTENSION(SwiftyAds)) <GADBannerViewDelegate>
+- (void)bannerViewDidReceiveAd:(GADBannerView * _Nonnull)_bannerView;
+- (void)bannerView:(GADBannerView * _Nonnull)_bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
+@end
+
+
 SWIFT_CLASS("_TtC9SwiftyAds11AdmobHandle")
 @interface AdmobHandle : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

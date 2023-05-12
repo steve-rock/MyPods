@@ -6165,6 +6165,518 @@
       },
       {
         "kind": "Import",
+        "name": "GoogleMobileAds",
+        "printedName": "GoogleMobileAds",
+        "declKind": "Import",
+        "moduleName": "SwiftyAds"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdmobBannerPosition",
+        "printedName": "AdmobBannerPosition",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftyAds.AdmobBannerPosition.Type) -> SwiftyAds.AdmobBannerPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdmobBannerPosition",
+                    "printedName": "SwiftyAds.AdmobBannerPosition",
+                    "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftyAds.AdmobBannerPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdmobBannerPosition",
+                        "printedName": "SwiftyAds.AdmobBannerPosition",
+                        "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9SwiftyAds19AdmobBannerPositionO3topyA2CmF",
+            "mangledName": "$s9SwiftyAds19AdmobBannerPositionO3topyA2CmF",
+            "moduleName": "SwiftyAds"
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftyAds.AdmobBannerPosition.Type) -> SwiftyAds.AdmobBannerPosition",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdmobBannerPosition",
+                    "printedName": "SwiftyAds.AdmobBannerPosition",
+                    "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SwiftyAds.AdmobBannerPosition.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdmobBannerPosition",
+                        "printedName": "SwiftyAds.AdmobBannerPosition",
+                        "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9SwiftyAds19AdmobBannerPositionO6bottomyA2CmF",
+            "mangledName": "$s9SwiftyAds19AdmobBannerPositionO6bottomyA2CmF",
+            "moduleName": "SwiftyAds"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdmobBannerPosition",
+                "printedName": "SwiftyAds.AdmobBannerPosition",
+                "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdmobBannerPosition",
+                "printedName": "SwiftyAds.AdmobBannerPosition",
+                "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9SwiftyAds19AdmobBannerPositionO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9SwiftyAds19AdmobBannerPositionO2eeoiySbAC_ACtFZ",
+            "moduleName": "SwiftyAds",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9SwiftyAds19AdmobBannerPositionO9hashValueSivp",
+            "mangledName": "$s9SwiftyAds19AdmobBannerPositionO9hashValueSivp",
+            "moduleName": "SwiftyAds",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9SwiftyAds19AdmobBannerPositionO9hashValueSivg",
+                "mangledName": "$s9SwiftyAds19AdmobBannerPositionO9hashValueSivg",
+                "moduleName": "SwiftyAds",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9SwiftyAds19AdmobBannerPositionO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s9SwiftyAds19AdmobBannerPositionO4hash4intoys6HasherVz_tF",
+            "moduleName": "SwiftyAds",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9SwiftyAds19AdmobBannerPositionO",
+        "mangledName": "$s9SwiftyAds19AdmobBannerPositionO",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdmobBanner",
+        "printedName": "AdmobBanner",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(loadHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdmobBanner",
+                "printedName": "SwiftyAds.AdmobBanner",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobBanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((CoreFoundation.CGSize, Swift.Bool) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(CoreFoundation.CGSize, Swift.Bool) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGSize, Swift.Bool)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9SwiftyAds11AdmobBannerC11loadHandlerACySo6CGSizeV_SbtcSg_tcfc",
+            "mangledName": "$s9SwiftyAds11AdmobBannerC11loadHandlerACySo6CGSizeV_SbtcSg_tcfc",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "addToViewIfNeed",
+            "printedName": "addToViewIfNeed(parent:controller:backgroundColor:position:padding:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdmobBannerPosition",
+                "printedName": "SwiftyAds.AdmobBannerPosition",
+                "hasDefaultArg": true,
+                "usr": "s:9SwiftyAds19AdmobBannerPositionO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9SwiftyAds11AdmobBannerC15addToViewIfNeed6parent10controller15backgroundColor8position7paddingySo6UIViewC_So0P10ControllerCSo7UIColorCAA0cD8PositionO14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s9SwiftyAds11AdmobBannerC15addToViewIfNeed6parent10controller15backgroundColor8position7paddingySo6UIViewC_So0P10ControllerCSo7UIColorCAA0cD8PositionO12CoreGraphics7CGFloatVtF",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeFromSuperView",
+            "printedName": "removeFromSuperView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9SwiftyAds11AdmobBannerC19removeFromSuperViewyyF",
+            "mangledName": "$s9SwiftyAds11AdmobBannerC19removeFromSuperViewyyF",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AdmobBanner",
+                "printedName": "SwiftyAds.AdmobBanner",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobBanner"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobBanner(im)init",
+            "mangledName": "$s9SwiftyAds11AdmobBannerCACycfc",
+            "moduleName": "SwiftyAds",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerViewDidReceiveAd",
+            "printedName": "bannerViewDidReceiveAd(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SwiftyAds@objc(cs)AdmobBanner(im)bannerViewDidReceiveAd:",
+            "mangledName": "$s9SwiftyAds11AdmobBannerC22bannerViewDidReceiveAdyySo09GADBannerF0CF",
+            "moduleName": "SwiftyAds",
+            "objc_name": "bannerViewDidReceiveAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "bannerView",
+            "printedName": "bannerView(_:didFailToReceiveAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GADBannerView",
+                "printedName": "GoogleMobileAds.GADBannerView",
+                "usr": "c:objc(cs)GADBannerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SwiftyAds@objc(cs)AdmobBanner(im)bannerView:didFailToReceiveAdWithError:",
+            "mangledName": "$s9SwiftyAds11AdmobBannerC10bannerView_27didFailToReceiveAdWithErrorySo09GADBannerF0C_s0M0_ptF",
+            "moduleName": "SwiftyAds",
+            "objc_name": "bannerView:didFailToReceiveAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SwiftyAds@objc(cs)AdmobBanner",
+        "mangledName": "$s9SwiftyAds11AdmobBannerC",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftMessages",
         "printedName": "SwiftMessages",
         "declKind": "Import",
@@ -13397,6 +13909,20 @@
       "offset": 835,
       "length": 21,
       "value": "\"Create New Playlist\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobBanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1592,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 205,
+      "length": 11,
+      "value": "\"SwiftyAds.AdmobBanner\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/SwiftMessagesHelper.swift",

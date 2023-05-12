@@ -195,6 +195,25 @@ public enum AdsUnit : Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum AdmobBannerPosition {
+  case top
+  case bottom
+  public static func == (a: SwiftyAds.AdmobBannerPosition, b: SwiftyAds.AdmobBannerPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public class AdmobBanner : ObjectiveC.NSObject {
+  public init(loadHandler: ((_ size: CoreFoundation.CGSize, _ isSuccess: Swift.Bool) -> Swift.Void)?)
+  public func addToViewIfNeed(parent: UIKit.UIView, controller: UIKit.UIViewController, backgroundColor: UIKit.UIColor = .white, position: SwiftyAds.AdmobBannerPosition = .bottom, padding: CoreFoundation.CGFloat = 0)
+  public func removeFromSuperView()
+  @objc deinit
+}
+extension SwiftyAds.AdmobBanner : GoogleMobileAds.GADBannerViewDelegate {
+  @objc dynamic public func bannerViewDidReceiveAd(_ _bannerView: GoogleMobileAds.GADBannerView)
+  @objc dynamic public func bannerView(_ _bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: Swift.Error)
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdView : GoogleMobileAds.GADNativeAdView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var nativeAd: GoogleMobileAds.GADNativeAd? {
     @objc get
@@ -220,3 +239,5 @@ extension SwiftyAds.AdsName : Swift.RawRepresentable {}
 extension SwiftyAds.AdsUnit : Swift.Equatable {}
 extension SwiftyAds.AdsUnit : Swift.Hashable {}
 extension SwiftyAds.AdsUnit : Swift.RawRepresentable {}
+extension SwiftyAds.AdmobBannerPosition : Swift.Equatable {}
+extension SwiftyAds.AdmobBannerPosition : Swift.Hashable {}
