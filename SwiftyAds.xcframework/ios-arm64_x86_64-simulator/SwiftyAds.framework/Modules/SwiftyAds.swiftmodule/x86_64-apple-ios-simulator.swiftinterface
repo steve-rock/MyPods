@@ -26,11 +26,11 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ApplovinOpenHandle : ObjectiveC.NSObject {
-  public static let shared: SwiftyAds.ApplovinOpenHandle
+  @objc public static let shared: SwiftyAds.ApplovinOpenHandle
   public func preloadAd(completion: ((_ success: Swift.Bool) -> Swift.Void)?)
   @discardableResult
-  public func tryToPresent() -> Swift.Bool
-  public func awake()
+  @objc public func tryToPresent() -> Swift.Bool
+  @objc public func awake()
   @objc deinit
 }
 extension SwiftyAds.ApplovinOpenHandle : AppLovinSDK.MAAdDelegate {
@@ -95,15 +95,15 @@ public enum SearchType : Swift.Int {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DBService : ObjectiveC.NSObject {
-  public static let shared: SwiftyAds.DBService
-  public func setup()
+  @objc public static let shared: SwiftyAds.DBService
+  @objc public func setup()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class AdmobOpenHandle : ObjectiveC.NSObject {
-  public static let shared: SwiftyAds.AdmobOpenHandle
+  @objc public static let shared: SwiftyAds.AdmobOpenHandle
   public func preloadAd(completion: ((_ success: Swift.Bool) -> Swift.Void)?)
-  public func tryToPresent() -> Swift.Bool
-  public func awake()
+  @objc public func tryToPresent() -> Swift.Bool
+  @objc public func awake()
   @objc deinit
 }
 extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelegate {
@@ -142,8 +142,8 @@ extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelega
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ApplovinHandle : ObjectiveC.NSObject {
-  public static let shared: SwiftyAds.ApplovinHandle
-  public func awake(completion: @escaping () -> Swift.Void)
+  @objc public static let shared: SwiftyAds.ApplovinHandle
+  @objc public func awake(completion: @escaping () -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -190,8 +190,8 @@ public enum AdsUnit : Swift.String {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AdmobHandle : ObjectiveC.NSObject {
-  public static let shared: SwiftyAds.AdmobHandle
-  public func awake(completion: @escaping () -> Swift.Void)
+  @objc public static let shared: SwiftyAds.AdmobHandle
+  @objc public func awake(completion: @escaping () -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }

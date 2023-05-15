@@ -243,7 +243,7 @@
 		</data>
 		<key>Headers/SwiftyAds-Swift.h</key>
 		<data>
-		wdv5eHlVPvXaRMOs2T3PLXzYDwQ=
+		OuXWGh/LunxDNu12a9qaA0pbwuU=
 		</data>
 		<key>Headers/SwiftyAds.h</key>
 		<data>
@@ -255,11 +255,11 @@
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4tgkDTPjE3ZTpdZGztncvjpQem0=
+		BpjU+fYZ/yqcNl9qvxtnW3CIWzo=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FtI6ghbaf2+59XZrBxRxErtYHUg=
+		/nRvN3RhH76wV0qtASyMfS5LRuw=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -267,19 +267,19 @@
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FtI6ghbaf2+59XZrBxRxErtYHUg=
+		/nRvN3RhH76wV0qtASyMfS5LRuw=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PyXeOM/u9c10wnxHvlCQFXt2LnE=
+		O49TAnhqsOi9z+yKYNvYjHIpm+Y=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4tgkDTPjE3ZTpdZGztncvjpQem0=
+		BpjU+fYZ/yqcNl9qvxtnW3CIWzo=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GR01dUn2hE1jqCduPH0Cw2MDGiA=
+		+BjIGlbmgrzEoVuqrkTf2GvhziQ=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -287,11 +287,11 @@
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GR01dUn2hE1jqCduPH0Cw2MDGiA=
+		+BjIGlbmgrzEoVuqrkTf2GvhziQ=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		joa5eacLU34vOX8aQfpDewsMtYE=
+		FsZSSMIHWFGibQptRWiHyvO3SE0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -658,7 +658,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BitFZ9g4Y2Dll5+nJ8sfmrvXdh2Riy+Ap/X/Lk0gmGY=
+			Gq//WdisTqkA3qdEOqTvfmMmXAw1mZ2OeyNPeJJlRdk=
 			</data>
 		</dict>
 		<key>Headers/SwiftyAds.h</key>
@@ -672,14 +672,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3yE/i+y2DZxFQTB1Na6XSCQYg5i3ZSUf7AdKfT8KChA=
+			kLWNcWHr+O5TF8RdvC/MjL2g7gpaaq2LeWNx0fWXsYA=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			unkfkfHiZRcF4kGI2icf/FaDvukNbPDMK3s6+shkMos=
+			0v9u0kLZgPcS9zRQW78e2VkiiGRYXZL9Y9lVk44iYGo=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -693,28 +693,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			unkfkfHiZRcF4kGI2icf/FaDvukNbPDMK3s6+shkMos=
+			0v9u0kLZgPcS9zRQW78e2VkiiGRYXZL9Y9lVk44iYGo=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zya4TqrRblFkc4onQCau92V8CUx3VKHHF36D0qo2zx8=
+			8/jIzKKYjxulq89KMx0ApxqzMx+giY922pjGTlLW8QE=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3yE/i+y2DZxFQTB1Na6XSCQYg5i3ZSUf7AdKfT8KChA=
+			kLWNcWHr+O5TF8RdvC/MjL2g7gpaaq2LeWNx0fWXsYA=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rnOOpFKESOhgUJi8dZd7B/9h7asciB3l3WQBClSoMlA=
+			v4Odg9JxfjjdLw9i7yIbsZ5J1S3t02MDdm4wIT5NfRA=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -728,14 +728,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rnOOpFKESOhgUJi8dZd7B/9h7asciB3l3WQBClSoMlA=
+			v4Odg9JxfjjdLw9i7yIbsZ5J1S3t02MDdm4wIT5NfRA=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzjjkHuS773xoEINFIxTmU7obVX40P7VrPi7miEMV/0=
+			NA8kpNsBbXg0SiErBS204Ez5/QLU70H0Gd2nQU+ljpU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

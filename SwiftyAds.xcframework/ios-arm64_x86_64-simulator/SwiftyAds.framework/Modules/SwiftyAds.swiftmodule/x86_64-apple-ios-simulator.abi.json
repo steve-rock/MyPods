@@ -123,7 +123,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9SwiftyAds18ApplovinOpenHandleC6sharedACvpZ",
+            "usr": "c:@M@SwiftyAds@objc(cs)ApplovinOpenHandle(cpy)shared",
             "mangledName": "$s9SwiftyAds18ApplovinOpenHandleC6sharedACvpZ",
             "moduleName": "SwiftyAds",
             "static": true,
@@ -132,6 +132,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -150,13 +151,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9SwiftyAds18ApplovinOpenHandleC6sharedACvgZ",
+                "usr": "c:@M@SwiftyAds@objc(cs)ApplovinOpenHandle(cm)shared",
                 "mangledName": "$s9SwiftyAds18ApplovinOpenHandleC6sharedACvgZ",
                 "moduleName": "SwiftyAds",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -222,11 +224,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds18ApplovinOpenHandleC12tryToPresentSbyF",
+            "usr": "c:@M@SwiftyAds@objc(cs)ApplovinOpenHandle(im)tryToPresent",
             "mangledName": "$s9SwiftyAds18ApplovinOpenHandleC12tryToPresentSbyF",
             "moduleName": "SwiftyAds",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
@@ -243,11 +246,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds18ApplovinOpenHandleC5awakeyyF",
+            "usr": "c:@M@SwiftyAds@objc(cs)ApplovinOpenHandle(im)awake",
             "mangledName": "$s9SwiftyAds18ApplovinOpenHandleC5awakeyyF",
             "moduleName": "SwiftyAds",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2655,7 +2659,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9SwiftyAds9DBServiceC6sharedACvpZ",
+            "usr": "c:@M@SwiftyAds@objc(cs)DBService(cpy)shared",
             "mangledName": "$s9SwiftyAds9DBServiceC6sharedACvpZ",
             "moduleName": "SwiftyAds",
             "static": true,
@@ -2663,7 +2667,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2681,13 +2686,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9SwiftyAds9DBServiceC6sharedACvgZ",
+                "usr": "c:@M@SwiftyAds@objc(cs)DBService(cm)shared",
                 "mangledName": "$s9SwiftyAds9DBServiceC6sharedACvgZ",
                 "moduleName": "SwiftyAds",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -2705,11 +2711,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds9DBServiceC5setupyyF",
+            "usr": "c:@M@SwiftyAds@objc(cs)DBService(im)setup",
             "mangledName": "$s9SwiftyAds9DBServiceC5setupyyF",
             "moduleName": "SwiftyAds",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -2910,7 +2917,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9SwiftyAds15AdmobOpenHandleC6sharedACvpZ",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobOpenHandle(cpy)shared",
             "mangledName": "$s9SwiftyAds15AdmobOpenHandleC6sharedACvpZ",
             "moduleName": "SwiftyAds",
             "static": true,
@@ -2919,6 +2926,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -2937,13 +2945,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9SwiftyAds15AdmobOpenHandleC6sharedACvgZ",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobOpenHandle(cm)shared",
                 "mangledName": "$s9SwiftyAds15AdmobOpenHandleC6sharedACvgZ",
                 "moduleName": "SwiftyAds",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -3009,11 +3018,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds15AdmobOpenHandleC12tryToPresentSbyF",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobOpenHandle(im)tryToPresent",
             "mangledName": "$s9SwiftyAds15AdmobOpenHandleC12tryToPresentSbyF",
             "moduleName": "SwiftyAds",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -3029,11 +3039,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds15AdmobOpenHandleC5awakeyyF",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobOpenHandle(im)awake",
             "mangledName": "$s9SwiftyAds15AdmobOpenHandleC5awakeyyF",
             "moduleName": "SwiftyAds",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4313,7 +4324,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9SwiftyAds14ApplovinHandleC6sharedACvpZ",
+            "usr": "c:@M@SwiftyAds@objc(cs)ApplovinHandle(cpy)shared",
             "mangledName": "$s9SwiftyAds14ApplovinHandleC6sharedACvpZ",
             "moduleName": "SwiftyAds",
             "static": true,
@@ -4322,6 +4333,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -4340,13 +4352,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9SwiftyAds14ApplovinHandleC6sharedACvgZ",
+                "usr": "c:@M@SwiftyAds@objc(cs)ApplovinHandle(cm)shared",
                 "mangledName": "$s9SwiftyAds14ApplovinHandleC6sharedACvgZ",
                 "moduleName": "SwiftyAds",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -4381,11 +4394,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds14ApplovinHandleC5awake10completionyyyc_tF",
+            "usr": "c:@M@SwiftyAds@objc(cs)ApplovinHandle(im)awakeWithCompletion:",
             "mangledName": "$s9SwiftyAds14ApplovinHandleC5awake10completionyyyc_tF",
             "moduleName": "SwiftyAds",
+            "objc_name": "awakeWithCompletion:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -5947,7 +5962,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9SwiftyAds11AdmobHandleC6sharedACvpZ",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(cpy)shared",
             "mangledName": "$s9SwiftyAds11AdmobHandleC6sharedACvpZ",
             "moduleName": "SwiftyAds",
             "static": true,
@@ -5956,6 +5971,7 @@
               "Final",
               "HasStorage",
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "isLet": true,
@@ -5974,13 +5990,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9SwiftyAds11AdmobHandleC6sharedACvgZ",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(cm)shared",
                 "mangledName": "$s9SwiftyAds11AdmobHandleC6sharedACvgZ",
                 "moduleName": "SwiftyAds",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               }
@@ -6015,11 +6032,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9SwiftyAds11AdmobHandleC5awake10completionyyyc_tF",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(im)awakeWithCompletion:",
             "mangledName": "$s9SwiftyAds11AdmobHandleC5awake10completionyyyc_tF",
             "moduleName": "SwiftyAds",
+            "objc_name": "awakeWithCompletion:",
             "declAttributes": [
               "AccessControl",
+              "ObjC",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -10413,7 +10432,7 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Controller\/SearchController.swift",
       "kind": "BooleanLiteral",
-      "offset": 21206,
+      "offset": 21276,
       "length": 4,
       "value": "true"
     },

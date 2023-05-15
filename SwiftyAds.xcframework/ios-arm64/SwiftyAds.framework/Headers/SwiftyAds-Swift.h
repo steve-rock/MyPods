@@ -273,6 +273,9 @@ SWIFT_CLASS("_TtC9SwiftyAds11AdmobBanner")
 
 SWIFT_CLASS("_TtC9SwiftyAds11AdmobHandle")
 @interface AdmobHandle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdmobHandle * _Nonnull shared;)
++ (AdmobHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)awakeWithCompletion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -306,8 +309,12 @@ SWIFT_CLASS("_TtC9SwiftyAds17AdmobNativeAdView")
 
 SWIFT_CLASS("_TtC9SwiftyAds15AdmobOpenHandle")
 @interface AdmobOpenHandle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdmobOpenHandle * _Nonnull shared;)
++ (AdmobOpenHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)tryToPresent SWIFT_WARN_UNUSED_RESULT;
+- (void)awake;
 @end
 
 @protocol GADFullScreenPresentingAd;
@@ -346,14 +353,21 @@ SWIFT_CLASS("_TtC9SwiftyAds20AppLovinNativeAdView")
 
 SWIFT_CLASS("_TtC9SwiftyAds14ApplovinHandle")
 @interface ApplovinHandle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ApplovinHandle * _Nonnull shared;)
++ (ApplovinHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)awakeWithCompletion:(void (^ _Nonnull)(void))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC9SwiftyAds18ApplovinOpenHandle")
 @interface ApplovinOpenHandle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ApplovinOpenHandle * _Nonnull shared;)
++ (ApplovinOpenHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (BOOL)tryToPresent;
+- (void)awake;
 @end
 
 @class MAAd;
@@ -372,8 +386,11 @@ SWIFT_CLASS("_TtC9SwiftyAds18ApplovinOpenHandle")
 
 SWIFT_CLASS("_TtC9SwiftyAds9DBService")
 @interface DBService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DBService * _Nonnull shared;)
++ (DBService * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)setup;
 @end
 
 
