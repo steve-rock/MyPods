@@ -13945,22 +13945,29 @@
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/SwiftMessagesHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 212,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/SwiftMessagesHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1218,
+      "offset": 1214,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/SwiftMessagesHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1607,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/SwiftMessagesHelper.swift",
       "kind": "StringLiteral",
-      "offset": 2002,
+      "offset": 1998,
       "length": 2,
       "value": "\"\""
     },
