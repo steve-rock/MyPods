@@ -7,7 +7,6 @@ import AVKit
 import AdSupport
 import AppLovinSDK
 import AppTrackingTransparency
-import CRRefresh
 import CryptoSwift
 import Foundation
 import GoogleMobileAds
@@ -26,6 +25,45 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CRRefreshFooterView : SwiftyAds.CRRefreshComponent {
+  @_Concurrency.MainActor(unsafe) open var noMoreData: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHidden: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) override open func start()
+  @_Concurrency.MainActor(unsafe) override open func stop()
+  @_Concurrency.MainActor(unsafe) override open func sizeChange(change: [Foundation.NSKeyValueChangeKey : Any]?)
+  @_Concurrency.MainActor(unsafe) override open func offsetChange(change: [Foundation.NSKeyValueChangeKey : Any]?)
+  @_Concurrency.MainActor(unsafe) open func noticeNoMoreData()
+  @_Concurrency.MainActor(unsafe) open func resetNoMoreData()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class SlackLoadingAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
+  @_Concurrency.MainActor(unsafe) open var view: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var trigger: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var execute: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var endDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var hold: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @_Concurrency.MainActor(unsafe) open func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ApplovinOpenHandle : ObjectiveC.NSObject {
   @objc public static let shared: SwiftyAds.ApplovinOpenHandle
   public func preloadAd(completion: ((_ success: Swift.Bool) -> Swift.Void)?)
@@ -41,6 +79,80 @@ extension SwiftyAds.ApplovinOpenHandle : AppLovinSDK.MAAdDelegate {
   @objc dynamic public func didClick(_ ad: AppLovinSDK.MAAd)
   @objc dynamic public func didHide(_ ad: AppLovinSDK.MAAd)
   @objc dynamic public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
+}
+open class CRRefreshAnimator : SwiftyAds.CRRefreshProtocol {
+  open var view: UIKit.UIView
+  open var insets: UIKit.UIEdgeInsets
+  open var trigger: CoreFoundation.CGFloat
+  open var execute: CoreFoundation.CGFloat
+  open var endDelay: CoreFoundation.CGFloat
+  public var hold: CoreFoundation.CGFloat
+  public init()
+  open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  open func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @objc deinit
+}
+public typealias CRRefreshView = UIKit.UIScrollView
+extension UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) public var cr: SwiftyAds.CRRefreshDSL {
+    get
+  }
+}
+public struct CRRefreshDSL : SwiftyAds.CRRefreshViewProtocol {
+  public var scroll: SwiftyAds.CRRefreshView
+  @discardableResult
+  public func addHeadRefresh(animator: SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshHeaderView
+  public func beginHeaderRefresh()
+  public func endHeaderRefresh()
+  public func removeHeader()
+  @discardableResult
+  public func addFootRefresh(animator: SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshFooterView
+  public func noticeNoMoreData()
+  public func resetNoMore()
+  public func endLoadingMore()
+  public func removeFooter()
+}
+public struct CRRefreshMake : SwiftyAds.CRRefreshViewProtocol {
+  public var scroll: SwiftyAds.CRRefreshView
+  public mutating func removeHeader()
+  public mutating func removeFooter()
+}
+public protocol CRRefreshViewProtocol {
+  var scroll: SwiftyAds.CRRefreshView { get set }
+  var header: SwiftyAds.CRRefreshHeaderView? { get set }
+  var footer: SwiftyAds.CRRefreshFooterView? { get set }
+}
+extension SwiftyAds.CRRefreshViewProtocol {
+  public var header: SwiftyAds.CRRefreshHeaderView? {
+    get
+    set
+  }
+  public var footer: SwiftyAds.CRRefreshFooterView? {
+    get
+    set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class FastAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
+  @_Concurrency.MainActor(unsafe) open var view: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var trigger: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var execute: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var endDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var hold: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, color: UIKit.UIColor = .init(rgb: (214, 214, 214)), arrowColor: UIKit.UIColor = .init(rgb: (165, 165, 165)), lineWidth: CoreFoundation.CGFloat = 1)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
 }
 public enum AltEnum : Swift.String {
   case setting
@@ -114,6 +226,31 @@ extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelega
   @objc dynamic public func adDidRecordImpression(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
   @objc dynamic public func adDidRecordClick(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NormalHeaderAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
+  @_Concurrency.MainActor(unsafe) open var pullToRefreshDescription: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var releaseToRefreshDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var loadingDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var view: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var trigger: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var execute: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var endDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var hold: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdCell : UIKit.UICollectionViewCell {
   @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
     get
@@ -127,6 +264,46 @@ extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelega
   }
   @_Concurrency.MainActor(unsafe) public class func size(_ width: CoreFoundation.CGFloat = 0) -> CoreFoundation.CGSize
   @objc deinit
+}
+public typealias CRRefreshHandler = (() -> ())
+public enum CRRefreshState {
+  case idle
+  case pulling
+  case refreshing
+  case willRefresh
+  case noMoreData
+  public static func == (a: SwiftyAds.CRRefreshState, b: SwiftyAds.CRRefreshState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CRRefreshComponent : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak open var scrollView: UIKit.UIScrollView?
+  @_Concurrency.MainActor(unsafe) open var scrollViewInsets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var handler: SwiftyAds.CRRefreshHandler?
+  @_Concurrency.MainActor(unsafe) open var animator: SwiftyAds.CRRefreshProtocol!
+  @_Concurrency.MainActor(unsafe) open var state: SwiftyAds.CRRefreshState {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = CRRefreshAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toSuperview newSuperview: UIKit.UIView?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) final public func beginRefreshing()
+  @_Concurrency.MainActor(unsafe) final public func endRefreshing()
+  @_Concurrency.MainActor(unsafe) public func ignoreObserver(_ ignore: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func start()
+  @_Concurrency.MainActor(unsafe) public func stop()
+  @_Concurrency.MainActor(unsafe) public func sizeChange(change: [Foundation.NSKeyValueChangeKey : Any]?)
+  @_Concurrency.MainActor(unsafe) public func offsetChange(change: [Foundation.NSKeyValueChangeKey : Any]?)
+  @objc deinit
+}
+extension SwiftyAds.CRRefreshComponent {
+  @_Concurrency.MainActor(unsafe) public static let animationDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AppLovinNativeAdCell : UIKit.UICollectionViewCell {
   @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
@@ -160,6 +337,25 @@ extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelega
   }
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RamotionAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
+  @_Concurrency.MainActor(unsafe) open var view: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var trigger: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var execute: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var endDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var hold: CoreFoundation.CGFloat
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public init(ballColor: UIKit.UIColor = .white, waveColor: UIKit.UIColor = .init(rgb: (140, 141, 178)))
+  @_Concurrency.MainActor(unsafe) open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @_Concurrency.MainActor(unsafe) open func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
 public typealias MuDictionary = [Swift.String : Any?]
 public typealias MuAnyHashable = [Swift.AnyHashable : Any]
 public enum AdsName : Swift.String {
@@ -178,6 +374,29 @@ public enum AdsUnit : Swift.String {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NormalFooterAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
+  @_Concurrency.MainActor(unsafe) open var loadingMoreDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var noMoreDataDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var loadingDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var view: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var duration: Swift.Double
+  @_Concurrency.MainActor(unsafe) open var insets: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open var trigger: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var execute: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var endDelay: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) open var hold: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) public func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  @_Concurrency.MainActor(unsafe) open func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) open func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AppLovinNativeAdTableCell : UIKit.UITableViewCell {
   @_Concurrency.MainActor(unsafe) public var nativeAd: Any? {
     get
@@ -188,6 +407,16 @@ public enum AdsUnit : Swift.String {
   @_Concurrency.MainActor(unsafe) public static var height: CoreFoundation.CGFloat {
     get
   }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CRRefreshHeaderView : SwiftyAds.CRRefreshComponent {
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) override open func start()
+  @_Concurrency.MainActor(unsafe) override open func stop()
+  @_Concurrency.MainActor(unsafe) override open func offsetChange(change: [Foundation.NSKeyValueChangeKey : Any]?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AdmobHandle : ObjectiveC.NSObject {
@@ -228,12 +457,30 @@ extension SwiftyAds.AdmobBanner : GoogleMobileAds.GADBannerViewDelegate {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public protocol CRRefreshProtocol {
+  var view: UIKit.UIView { get }
+  var insets: UIKit.UIEdgeInsets { get set }
+  var trigger: CoreFoundation.CGFloat { get set }
+  var execute: CoreFoundation.CGFloat { get set }
+  var endDelay: CoreFoundation.CGFloat { get set }
+  var hold: CoreFoundation.CGFloat { get set }
+  mutating func refreshBegin(view: SwiftyAds.CRRefreshComponent)
+  mutating func refreshWillEnd(view: SwiftyAds.CRRefreshComponent)
+  mutating func refreshEnd(view: SwiftyAds.CRRefreshComponent, finish: Swift.Bool)
+  mutating func refresh(view: SwiftyAds.CRRefreshComponent, progressDidChange progress: CoreFoundation.CGFloat)
+  mutating func refresh(view: SwiftyAds.CRRefreshComponent, stateDidChange state: SwiftyAds.CRRefreshState)
+}
+extension UIKit.UIColor {
+  convenience public init(rgb: (r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat))
+}
 extension SwiftyAds.AltEnum : Swift.Equatable {}
 extension SwiftyAds.AltEnum : Swift.Hashable {}
 extension SwiftyAds.AltEnum : Swift.RawRepresentable {}
 extension SwiftyAds.SearchType : Swift.Equatable {}
 extension SwiftyAds.SearchType : Swift.Hashable {}
 extension SwiftyAds.SearchType : Swift.RawRepresentable {}
+extension SwiftyAds.CRRefreshState : Swift.Equatable {}
+extension SwiftyAds.CRRefreshState : Swift.Hashable {}
 extension SwiftyAds.AdsName : Swift.Equatable {}
 extension SwiftyAds.AdsName : Swift.Hashable {}
 extension SwiftyAds.AdsName : Swift.RawRepresentable {}

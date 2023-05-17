@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'SwiftMessages', '~> 9.0'
   s.dependency 'MarqueeLabel', '4.3.0'
-  s.dependency 'CRRefresh', '~> 1.1'
+  # s.dependency 'CRRefresh', '~> 1.1'
   s.dependency 'RealmSwift', '10.39.1'
   s.dependency 'SDWebImage', '~> 5.0'
   s.dependency 'SwiftSoup', '2.6.0'

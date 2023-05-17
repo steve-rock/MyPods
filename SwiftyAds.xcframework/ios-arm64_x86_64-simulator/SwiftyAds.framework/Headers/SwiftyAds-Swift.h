@@ -232,6 +232,7 @@ using UInt = size_t;
 #endif
 @import AppLovinSDK;
 @import CoreFoundation;
+@import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
 @import UIKit;
@@ -384,6 +385,38 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ApplovinOpen
 
 
 
+
+SWIFT_CLASS("_TtC9SwiftyAds18CRRefreshComponent")
+@interface CRRefreshComponent : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
+- (void)didMoveToSuperview;
+@end
+
+
+@interface CRRefreshComponent (SWIFT_EXTENSION(SwiftyAds))
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds19CRRefreshFooterView")
+@interface CRRefreshFooterView : CRRefreshComponent
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds19CRRefreshHeaderView")
+@interface CRRefreshHeaderView : CRRefreshComponent
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SwiftyAds9DBService")
 @interface DBService : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DBService * _Nonnull shared;)
@@ -392,6 +425,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DBService * 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setup;
 @end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds12FastAnimator")
+@interface FastAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20NormalFooterAnimator")
+@interface NormalFooterAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20NormalHeaderAnimator")
+@interface NormalHeaderAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds16RamotionAnimator")
+@interface RamotionAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20SlackLoadingAnimator")
+@interface SlackLoadingAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
 
 
 
@@ -652,6 +726,7 @@ using UInt = size_t;
 #endif
 @import AppLovinSDK;
 @import CoreFoundation;
+@import Foundation;
 @import GoogleMobileAds;
 @import ObjectiveC;
 @import UIKit;
@@ -804,6 +879,38 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ApplovinOpen
 
 
 
+
+SWIFT_CLASS("_TtC9SwiftyAds18CRRefreshComponent")
+@interface CRRefreshComponent : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
+- (void)didMoveToSuperview;
+@end
+
+
+@interface CRRefreshComponent (SWIFT_EXTENSION(SwiftyAds))
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds19CRRefreshFooterView")
+@interface CRRefreshFooterView : CRRefreshComponent
+@property (nonatomic, getter=isHidden) BOOL hidden;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds19CRRefreshHeaderView")
+@interface CRRefreshHeaderView : CRRefreshComponent
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC9SwiftyAds9DBService")
 @interface DBService : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DBService * _Nonnull shared;)
@@ -812,6 +919,47 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DBService * 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)setup;
 @end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds12FastAnimator")
+@interface FastAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20NormalFooterAnimator")
+@interface NormalFooterAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20NormalHeaderAnimator")
+@interface NormalHeaderAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds16RamotionAnimator")
+@interface RamotionAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC9SwiftyAds20SlackLoadingAnimator")
+@interface SlackLoadingAnimator : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
 
 
 
