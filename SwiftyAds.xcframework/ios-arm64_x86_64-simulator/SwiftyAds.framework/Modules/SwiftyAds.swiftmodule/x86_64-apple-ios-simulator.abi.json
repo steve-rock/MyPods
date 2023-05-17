@@ -17338,6 +17338,300 @@
       },
       {
         "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UserNotificationHandle",
+        "printedName": "UserNotificationHandle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserNotificationHandle",
+                "printedName": "SwiftyAds.UserNotificationHandle",
+                "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(cpy)shared",
+            "mangledName": "$s9SwiftyAds22UserNotificationHandleC6sharedACvpZ",
+            "moduleName": "SwiftyAds",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UserNotificationHandle",
+                    "printedName": "SwiftyAds.UserNotificationHandle",
+                    "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(cm)shared",
+                "mangledName": "$s9SwiftyAds22UserNotificationHandleC6sharedACvgZ",
+                "moduleName": "SwiftyAds",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(im)requestWithCompletion:",
+            "mangledName": "$s9SwiftyAds22UserNotificationHandleC7request10completionyySbc_tF",
+            "moduleName": "SwiftyAds",
+            "objc_name": "requestWithCompletion:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeScheduleEveryday",
+            "printedName": "makeScheduleEveryday(body:hour:minute:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(im)makeScheduleEverydayWithBody:hour:minute:",
+            "mangledName": "$s9SwiftyAds22UserNotificationHandleC20makeScheduleEveryday4body4hour6minuteySS_S2itF",
+            "moduleName": "SwiftyAds",
+            "objc_name": "makeScheduleEverydayWithBody:hour:minute:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeScheduleEveryday",
+            "printedName": "makeScheduleEveryday(title:body:hour:minute:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(im)makeScheduleEverydayWithTitle:body:hour:minute:",
+            "mangledName": "$s9SwiftyAds22UserNotificationHandleC20makeScheduleEveryday5title4body4hour6minuteySS_SSS2itF",
+            "moduleName": "SwiftyAds",
+            "objc_name": "makeScheduleEverydayWithTitle:body:hour:minute:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UserNotificationHandle",
+                "printedName": "SwiftyAds.UserNotificationHandle",
+                "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle(im)init",
+            "mangledName": "$s9SwiftyAds22UserNotificationHandleCACycfc",
+            "moduleName": "SwiftyAds",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SwiftyAds@objc(cs)UserNotificationHandle",
+        "mangledName": "$s9SwiftyAds22UserNotificationHandleC",
+        "moduleName": "SwiftyAds",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -22144,42 +22438,42 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "BooleanLiteral",
-      "offset": 381,
+      "offset": 375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "BooleanLiteral",
-      "offset": 583,
+      "offset": 577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "BooleanLiteral",
-      "offset": 766,
+      "offset": 760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "IntegerLiteral",
-      "offset": 802,
+      "offset": 796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "IntegerLiteral",
-      "offset": 851,
+      "offset": 845,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/LoadingView.swift",
       "kind": "StringLiteral",
-      "offset": 947,
+      "offset": 941,
       "length": 2,
       "value": "\"\""
     },
@@ -24909,14 +25203,14 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1592,
+      "offset": 1586,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobBanner.swift",
       "kind": "StringLiteral",
-      "offset": 205,
+      "offset": 199,
       "length": 11,
       "value": "\"SwiftyAds.AdmobBanner\""
     },
@@ -25899,6 +26193,55 @@
       "offset": 1171,
       "length": 1,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "Array",
+      "offset": 226,
+      "length": 112,
+      "value": "[\"Music just for you 🎧\nListen and download free music 🎧\", \"👉 Tap to play music\"]"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 996,
+      "length": 46,
+      "value": "\"Enjoy top pop songs of all time 📀📀📀\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1056,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1073,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1263,
+      "length": 46,
+      "value": "\"Enjoy top pop songs of all time 📀📀📀\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1323,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/UserNotificationHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1340,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/View\/ArtistDetail\/ArtistDetailFeaturedItemCell.swift",

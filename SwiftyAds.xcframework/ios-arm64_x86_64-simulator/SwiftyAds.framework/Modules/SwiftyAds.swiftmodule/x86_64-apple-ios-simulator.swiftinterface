@@ -473,6 +473,14 @@ public protocol CRRefreshProtocol {
 extension UIKit.UIColor {
   convenience public init(rgb: (r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat))
 }
+@objc @_inheritsConvenienceInitializers public class UserNotificationHandle : ObjectiveC.NSObject {
+  @objc public static let shared: SwiftyAds.UserNotificationHandle
+  @objc public func request(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public func makeScheduleEveryday(body: Swift.String = "Enjoy top pop songs of all time 📀📀📀", hour: Swift.Int = 9, minute: Swift.Int = 30)
+  @objc public func makeScheduleEveryday(title: Swift.String, body: Swift.String = "Enjoy top pop songs of all time 📀📀📀", hour: Swift.Int = 9, minute: Swift.Int = 30)
+  @objc override dynamic public init()
+  @objc deinit
+}
 extension SwiftyAds.AltEnum : Swift.Equatable {}
 extension SwiftyAds.AltEnum : Swift.Hashable {}
 extension SwiftyAds.AltEnum : Swift.RawRepresentable {}

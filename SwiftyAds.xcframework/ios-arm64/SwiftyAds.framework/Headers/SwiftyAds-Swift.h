@@ -484,6 +484,17 @@ SWIFT_CLASS("_TtC9SwiftyAds20SlackLoadingAnimator")
 
 
 
+
+SWIFT_CLASS("_TtC9SwiftyAds22UserNotificationHandle")
+@interface UserNotificationHandle : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UserNotificationHandle * _Nonnull shared;)
++ (UserNotificationHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (void)requestWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+- (void)makeScheduleEverydayWithBody:(NSString * _Nonnull)body hour:(NSInteger)hour minute:(NSInteger)minute;
+- (void)makeScheduleEverydayWithTitle:(NSString * _Nonnull)title body:(NSString * _Nonnull)body hour:(NSInteger)hour minute:(NSInteger)minute;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif
 #if defined(__cplusplus)
 #endif
