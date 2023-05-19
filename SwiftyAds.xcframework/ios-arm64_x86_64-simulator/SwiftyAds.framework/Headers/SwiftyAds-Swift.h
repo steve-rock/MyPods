@@ -271,9 +271,11 @@ SWIFT_CLASS("_TtC9SwiftyAds11AdmobBanner")
 - (void)bannerView:(GADBannerView * _Nonnull)_bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
 @end
 
+@class NSString;
 
 SWIFT_CLASS("_TtC9SwiftyAds11AdmobHandle")
 @interface AdmobHandle : NSObject
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull idsTest;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdmobHandle * _Nonnull shared;)
 + (AdmobHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeWithCompletion:(void (^ _Nonnull)(void))completion;
@@ -289,7 +291,6 @@ SWIFT_CLASS("_TtC9SwiftyAds17AdmobNativeAdCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC9SwiftyAds22AdmobNativeAdTableCell")
 @interface AdmobNativeAdTableCell : UITableViewCell
@@ -776,9 +777,11 @@ SWIFT_CLASS("_TtC9SwiftyAds11AdmobBanner")
 - (void)bannerView:(GADBannerView * _Nonnull)_bannerView didFailToReceiveAdWithError:(NSError * _Nonnull)error;
 @end
 
+@class NSString;
 
 SWIFT_CLASS("_TtC9SwiftyAds11AdmobHandle")
 @interface AdmobHandle : NSObject
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull idsTest;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) AdmobHandle * _Nonnull shared;)
 + (AdmobHandle * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeWithCompletion:(void (^ _Nonnull)(void))completion;
@@ -794,7 +797,6 @@ SWIFT_CLASS("_TtC9SwiftyAds17AdmobNativeAdCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC9SwiftyAds22AdmobNativeAdTableCell")
 @interface AdmobNativeAdTableCell : UITableViewCell

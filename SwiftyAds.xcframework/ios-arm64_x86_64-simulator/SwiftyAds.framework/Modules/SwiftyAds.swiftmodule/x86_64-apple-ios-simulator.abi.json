@@ -15245,6 +15245,123 @@
         "children": [
           {
             "kind": "Var",
+            "name": "idsTest",
+            "printedName": "idsTest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(py)idsTest",
+            "mangledName": "$s9SwiftyAds11AdmobHandleC7idsTestSaySSGvp",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(im)idsTest",
+                "mangledName": "$s9SwiftyAds11AdmobHandleC7idsTestSaySSGvg",
+                "moduleName": "SwiftyAds",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SwiftyAds@objc(cs)AdmobHandle(im)setIdsTest:",
+                "mangledName": "$s9SwiftyAds11AdmobHandleC7idsTestSaySSGvs",
+                "moduleName": "SwiftyAds",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9SwiftyAds11AdmobHandleC7idsTestSaySSGvM",
+                "mangledName": "$s9SwiftyAds11AdmobHandleC7idsTestSaySSGvM",
+                "moduleName": "SwiftyAds",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shared",
             "printedName": "shared",
             "children": [
@@ -25133,7 +25250,7 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobHandle.swift",
       "kind": "Array",
-      "offset": 433,
+      "offset": 446,
       "length": 2,
       "value": "[]"
     },

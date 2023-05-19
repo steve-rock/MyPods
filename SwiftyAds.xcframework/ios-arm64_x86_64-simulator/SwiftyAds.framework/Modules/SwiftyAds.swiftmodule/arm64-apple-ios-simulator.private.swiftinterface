@@ -420,6 +420,7 @@ public enum AdsUnit : Swift.String {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AdmobHandle : ObjectiveC.NSObject {
+  @objc public var idsTest: [Swift.String]
   @objc public static let shared: SwiftyAds.AdmobHandle
   @objc public func awake(completion: @escaping () -> Swift.Void)
   @objc override dynamic public init()
