@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = 'SwiftyyAds'
-  s.version       = '1.0.1'
+  s.version       = '1.0.2'
   s.summary       = 'MS SDK'
   s.homepage      = 'https://github.com/steve-rock/MyPods'
   s.license       = { :type => 'MIT', :file => 'LICENSE' }

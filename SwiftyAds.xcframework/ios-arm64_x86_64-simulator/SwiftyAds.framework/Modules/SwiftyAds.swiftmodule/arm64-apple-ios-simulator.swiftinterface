@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SwiftyAds
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -34,7 +34,7 @@ import _StringProcessing
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: any SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
   @_Concurrency.MainActor(unsafe) override open func start()
   @_Concurrency.MainActor(unsafe) override open func stop()
@@ -104,12 +104,12 @@ extension UIKit.UIScrollView {
 public struct CRRefreshDSL : SwiftyAds.CRRefreshViewProtocol {
   public var scroll: SwiftyAds.CRRefreshView
   @discardableResult
-  public func addHeadRefresh(animator: SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshHeaderView
+  public func addHeadRefresh(animator: any SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshHeaderView
   public func beginHeaderRefresh()
   public func endHeaderRefresh()
   public func removeHeader()
   @discardableResult
-  public func addFootRefresh(animator: SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshFooterView
+  public func addFootRefresh(animator: any SwiftyAds.CRRefreshProtocol = NormalFooterAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler) -> SwiftyAds.CRRefreshFooterView
   public func noticeNoMoreData()
   public func resetNoMore()
   public func endLoadingMore()
@@ -220,11 +220,11 @@ public enum SearchType : Swift.Int {
   @objc deinit
 }
 extension SwiftyAds.AdmobOpenHandle : GoogleMobileAds.GADFullScreenContentDelegate {
-  @objc dynamic public func adWillPresentFullScreenContent(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
-  @objc dynamic public func adDidDismissFullScreenContent(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
-  @objc dynamic public func ad(_ ad: GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Swift.Error)
-  @objc dynamic public func adDidRecordImpression(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
-  @objc dynamic public func adDidRecordClick(_ ad: GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func adWillPresentFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func adDidDismissFullScreenContent(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func ad(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: any Swift.Error)
+  @objc dynamic public func adDidRecordImpression(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
+  @objc dynamic public func adDidRecordClick(_ ad: any GoogleMobileAds.GADFullScreenPresentingAd)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NormalHeaderAnimator : UIKit.UIView, SwiftyAds.CRRefreshProtocol {
   @_Concurrency.MainActor(unsafe) open var pullToRefreshDescription: Swift.String {
@@ -282,13 +282,13 @@ public enum CRRefreshState {
   @_Concurrency.MainActor(unsafe) weak open var scrollView: UIKit.UIScrollView?
   @_Concurrency.MainActor(unsafe) open var scrollViewInsets: UIKit.UIEdgeInsets
   @_Concurrency.MainActor(unsafe) open var handler: SwiftyAds.CRRefreshHandler?
-  @_Concurrency.MainActor(unsafe) open var animator: SwiftyAds.CRRefreshProtocol!
+  @_Concurrency.MainActor(unsafe) open var animator: (any SwiftyAds.CRRefreshProtocol)!
   @_Concurrency.MainActor(unsafe) open var state: SwiftyAds.CRRefreshState {
     get
     set
   }
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = CRRefreshAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: any SwiftyAds.CRRefreshProtocol = CRRefreshAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func willMove(toSuperview newSuperview: UIKit.UIView?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
@@ -410,7 +410,7 @@ public enum AdsUnit : Swift.String {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CRRefreshHeaderView : SwiftyAds.CRRefreshComponent {
-  @_Concurrency.MainActor(unsafe) convenience public init(animator: SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
+  @_Concurrency.MainActor(unsafe) convenience public init(animator: any SwiftyAds.CRRefreshProtocol = NormalHeaderAnimator(), handler: @escaping SwiftyAds.CRRefreshHandler)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToSuperview()
   @_Concurrency.MainActor(unsafe) override open func start()
   @_Concurrency.MainActor(unsafe) override open func stop()
@@ -443,7 +443,7 @@ public enum AdmobBannerPosition {
 }
 extension SwiftyAds.AdmobBanner : GoogleMobileAds.GADBannerViewDelegate {
   @objc dynamic public func bannerViewDidReceiveAd(_ _bannerView: GoogleMobileAds.GADBannerView)
-  @objc dynamic public func bannerView(_ _bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: Swift.Error)
+  @objc dynamic public func bannerView(_ _bannerView: GoogleMobileAds.GADBannerView, didFailToReceiveAdWithError error: any Swift.Error)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class AdmobNativeAdView : GoogleMobileAds.GADNativeAdView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public var nativeAd: GoogleMobileAds.GADNativeAd? {
