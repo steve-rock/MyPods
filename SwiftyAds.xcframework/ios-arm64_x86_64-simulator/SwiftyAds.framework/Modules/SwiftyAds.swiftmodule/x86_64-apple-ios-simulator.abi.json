@@ -30457,56 +30457,70 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 541,
-      "length": 33,
-      "value": "\"Admob: Interstitial ID is empty\""
+      "offset": 526,
+      "length": 24,
+      "value": "\"Admob is not ready yet\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 595,
+      "offset": 571,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 687,
+      "length": 33,
+      "value": "\"Admob: Interstitial ID is empty\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
+      "kind": "BooleanLiteral",
+      "offset": 741,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
       "length": 44,
       "value": "\"Admob: Not available interstitial ads type\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 792,
+      "offset": 938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 832,
+      "offset": 978,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 1093,
+      "offset": 1239,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 1563,
+      "offset": 1709,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 1794,
+      "offset": 1940,
       "length": 5,
       "value": "false"
     },
@@ -37632,105 +37646,119 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 592,
+      "offset": 577,
+      "length": 27,
+      "value": "\"Applovin is not ready yet\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
+      "kind": "BooleanLiteral",
+      "offset": 625,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
       "length": 36,
       "value": "\"Applovin: Interstitial ID is empty\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 649,
+      "offset": 801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 936,
       "length": 47,
       "value": "\"Applovin: Not available interstitial ads type\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 852,
+      "offset": 1004,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 892,
+      "offset": 1044,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1371,
       "length": 12,
       "value": "\"Applovin 1\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 1309,
+      "offset": 1461,
       "length": 12,
       "value": "\"Applovin 2\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 1346,
+      "offset": 1498,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 1422,
+      "offset": 1574,
       "length": 12,
       "value": "\"Applovin 3\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 1515,
+      "offset": 1667,
       "length": 12,
       "value": "\"Applovin 4\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 1790,
+      "offset": 1942,
       "length": 12,
       "value": "\"Applovin 5\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 2332,
+      "offset": 2484,
       "length": 12,
       "value": "\"Applovin 6\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 2373,
+      "offset": 2525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "StringLiteral",
-      "offset": 2559,
+      "offset": 2711,
       "length": 12,
       "value": "\"Applovin 7\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinInterstitial.swift",
       "kind": "BooleanLiteral",
-      "offset": 2655,
+      "offset": 2807,
       "length": 5,
       "value": "false"
     },

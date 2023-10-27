@@ -275,7 +275,7 @@
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rT+gklG7WSZUFTmkyZJSpVvMP0c=
+		nOkoyTWQsv2AKBu0/Gc+l24dC8g=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -295,7 +295,7 @@
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rT+gklG7WSZUFTmkyZJSpVvMP0c=
+		nOkoyTWQsv2AKBu0/Gc+l24dC8g=
 		</data>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -727,7 +727,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikNXtwIG1GK5E323G6g2PdKzPzFcU3PX+XoP6Urfpg4=
+			nYHPbqwhth2Im4JhG4W//pIjaegjlN1S3k6EXZURdv4=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -762,7 +762,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikNXtwIG1GK5E323G6g2PdKzPzFcU3PX+XoP6Urfpg4=
+			nYHPbqwhth2Im4JhG4W//pIjaegjlN1S3k6EXZURdv4=
 			</data>
 		</dict>
 		<key>Modules/SwiftyAds.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
