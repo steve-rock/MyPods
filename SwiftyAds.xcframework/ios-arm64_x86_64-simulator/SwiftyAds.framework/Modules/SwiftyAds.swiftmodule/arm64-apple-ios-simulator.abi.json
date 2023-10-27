@@ -41236,73 +41236,101 @@
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1060,
+      "length": 57,
+      "value": "\"preload index = \""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1086,
+      "length": 1,
+      "value": "\", total = \""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1116,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1100,
+      "offset": 1199,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 1270,
+      "offset": 1369,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1462,
+      "length": 18,
+      "value": "\"Loading admob...\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1443,
+      "offset": 1597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1643,
+      "offset": 1797,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 1919,
+      "length": 21,
+      "value": "\"Loading applovin...\""
+    },
+    {
+      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2060,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1848,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2051,
+      "offset": 2263,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 2208,
+      "offset": 2420,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 2270,
+      "offset": 2482,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2570,
       "length": 16,
       "value": "\"Loading ads...\""
-    },
-    {
-      "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/AdsInterstitialHandle.swift",
-      "kind": "FloatLiteral",
-      "offset": 2509,
-      "length": 3,
-      "value": "0.1"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Object\/TrackObject.swift",
