@@ -466,6 +466,13 @@ SWIFT_CLASS("_TtC9SwiftyAds12FastAnimator")
 @end
 
 
+SWIFT_CLASS("_TtC9SwiftyAds10LogService")
+@interface LogService : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 
 SWIFT_CLASS("_TtC9SwiftyAds20NormalFooterAnimator")
 @interface NormalFooterAnimator : UIView

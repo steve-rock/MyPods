@@ -482,6 +482,11 @@ extension UIKit.UIColor {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LogService : ObjectiveC.NSObject {
+  public var debugMode: Swift.Bool
+  public static let shared: SwiftyAds.LogService
+  @objc deinit
+}
 extension SwiftyAds.AltEnum : Swift.Equatable {}
 extension SwiftyAds.AltEnum : Swift.Hashable {}
 extension SwiftyAds.AltEnum : Swift.RawRepresentable {}
