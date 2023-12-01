@@ -320,6 +320,9 @@ extension SwiftyAds.CRRefreshComponent {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class ApplovinHandle : ObjectiveC.NSObject {
+  public var isReady: Swift.Bool {
+    get
+  }
   @objc public static let shared: SwiftyAds.ApplovinHandle
   @objc public func awake(completion: @escaping () -> Swift.Void)
   @objc override dynamic public init()
@@ -420,6 +423,9 @@ public enum AdsUnit : Swift.String {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AdmobHandle : ObjectiveC.NSObject {
+  public var isReady: Swift.Bool {
+    get
+  }
   @objc public var idsTest: [Swift.String]
   @objc public static let shared: SwiftyAds.AdmobHandle
   @objc public func awake(completion: @escaping () -> Swift.Void)

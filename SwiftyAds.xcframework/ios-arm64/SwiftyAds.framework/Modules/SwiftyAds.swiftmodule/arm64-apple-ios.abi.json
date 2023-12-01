@@ -11175,6 +11175,46 @@
         "children": [
           {
             "kind": "Var",
+            "name": "isReady",
+            "printedName": "isReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9SwiftyAds14ApplovinHandleC7isReadySbvp",
+            "mangledName": "$s9SwiftyAds14ApplovinHandleC7isReadySbvp",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9SwiftyAds14ApplovinHandleC7isReadySbvg",
+                "mangledName": "$s9SwiftyAds14ApplovinHandleC7isReadySbvg",
+                "moduleName": "SwiftyAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "shared",
             "printedName": "shared",
             "children": [
@@ -15243,6 +15283,46 @@
         "name": "AdmobHandle",
         "printedName": "AdmobHandle",
         "children": [
+          {
+            "kind": "Var",
+            "name": "isReady",
+            "printedName": "isReady",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9SwiftyAds11AdmobHandleC7isReadySbvp",
+            "mangledName": "$s9SwiftyAds11AdmobHandleC7isReadySbvp",
+            "moduleName": "SwiftyAds",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9SwiftyAds11AdmobHandleC7isReadySbvg",
+                "mangledName": "$s9SwiftyAds11AdmobHandleC7isReadySbvg",
+                "moduleName": "SwiftyAds",
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "idsTest",
@@ -40530,21 +40610,21 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinHandle.swift",
       "kind": "Array",
-      "offset": 871,
+      "offset": 878,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinHandle.swift",
       "kind": "StringLiteral",
-      "offset": 937,
+      "offset": 944,
       "length": 5,
       "value": "\"max\""
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Applovin\/ApplovinHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 1050,
+      "offset": 1057,
       "length": 4,
       "value": "true"
     },
@@ -44324,21 +44404,21 @@
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 345,
+      "offset": 352,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobHandle.swift",
       "kind": "Array",
-      "offset": 446,
+      "offset": 453,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/quynhnv\/Work\/latbom\/MuricUtilities\/MuricUtilities\/SwiftyAds\/Service\/Admob\/AdmobHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 889,
+      "offset": 896,
       "length": 4,
       "value": "true"
     },
